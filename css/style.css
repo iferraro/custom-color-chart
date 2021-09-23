@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: black;
+    font-family: 'Metamorphous', cursive;
+}
+header, footer {
+    color: white;
+}
+#banner {
+    font-size: 100px;
+}
+#update {
+    font-size: 40px;
+    margin: 40px;
+}
+h2 {
+    padding: 40px 0 40px 0;
+    margin: 15px auto;
+    border-radius: 50vh;
+    font-size: 40px;
+    max-width: 1000px;
+    /* transition: 150ms cubic-bezier(.81, .29, .06, .94); */
+}
+p {
+    margin: 20px 0 0 0;
+}
+footer {
+    font-size: 30px;
+    margin: 40px 0 0 0;
+}
