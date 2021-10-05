@@ -30,6 +30,7 @@ addBar("Morado Misterioso", "280D3F");
 function addBar(colorName, colorHex) {
     let hex = "#" + colorHex;
     let horiz = $("<h2></h2>").text(colorName);
+    horiz.addClass("colorBar");
     horiz.css("background-color", hex);
     let descrip = $("<p></p>").text(hex);
     let descripAlt = $("<p></p>").text($(horiz).css("background-color"));
@@ -37,7 +38,7 @@ function addBar(colorName, colorHex) {
     horiz.append(descripAlt);
     descrip.hide();
     descripAlt.hide();
-    $("body").append(horiz);
+    $("#col2").append(horiz);
     if (colorHex[0] <= 3 && colorHex[2] <= 3 && colorHex[4] <= 3) {
         horiz.css("color", "white");
     }
