@@ -17,11 +17,11 @@ addBar("Sincere Blue", "2626C6");
 addBar("Hydrangea", "044CE1");
 addBar("Linear Blue: Dark", "036595");
 addBar("Linear Blue: Light", "0385B5");
+addBar("Samson", "00EEFF");
 addBar("Mail", "EDEFEE");
 addBar("Robin Egg", "9ACACA");
 addBar("Sand-ish Teal-ish", "547C86");
-addBar("Cyan Spirit: Light", "00FFDA");
-addBar("Copper Crystal", "00B5C1");
+addBar("Cyan Spirit: Light", "00FFDA")
 addBar("Righteous Blue: Light", "007696");
 addBar("Righteous Blue: Dark", "004056");
 addBar("Exec", "18213A");
