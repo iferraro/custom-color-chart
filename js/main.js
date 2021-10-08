@@ -17,7 +17,7 @@ addBar("Sincere Blue", "2626C6");
 addBar("Hydrangea", "044CE1");
 addBar("Linear Blue: Dark", "036595");
 addBar("Linear Blue: Light", "0385B5");
-addBar("Samson", "00EEFF");
+addBar("Samson", "015EAA");
 addBar("Mail", "EDEFEE");
 addBar("Robin Egg", "9ACACA");
 addBar("Sand-ish Teal-ish", "547C86");
