@@ -1,49 +1,48 @@
-addBar("Wet Sand", "AEA98B");
-addBar("Kidney Bean", "B9535D");
-addBar("Dauntless Pink", "CC3399");
-addBar("Protagonist", "B51B37");
-addBar("IF Signature", "CC2034");
-addBar("Jaunty", "FF2625");
-addBar("Pleasant Orange", "F77F00");
-addBar("Honeycomb", "FE9C01");
-addBar("Pompous Orange", "FFAC40");
-addBar("Sardonic Green", "8DA868");
-addBar("Erudite", "378C40");
-addBar("Tiger Beetle", "188E68");
-addBar("Swamp", "204338");
-addBar("Humble Green", "00201C");
-addBar("Cyan Spirit: Dark", "003A42");
-addBar("Sincere Blue", "2626C6");
-addBar("Hydrangea", "044CE1");
-addBar("Linear Blue: Dark", "036595");
-addBar("Linear Blue: Light", "0385B5");
-addBar("Samson", "015EAA");
-addBar("Mail", "EDEFEE");
-addBar("Robin Egg", "9ACACA");
-addBar("Sand-ish Teal-ish", "547C86");
-addBar("Cyan Spirit: Light", "00FFDA")
-addBar("Righteous Blue: Light", "007696");
-addBar("Righteous Blue: Dark", "004056");
-addBar("Exec", "18213A");
-addBar("Morado Misterioso", "280D3F");
+const colors = [
+    {name: "Wet Sand", hex: "AEA98B"},
+    {name: "Kidney Bean", hex: "B9535D"},
+    {name: "Dauntless Pink", hex: "CC3399"},
+    {name: "Protagonist", hex: "B51B37"},
+    {name: "Jaunty", hex: "FF2625"},
+    {name: "Pleasant Orange", hex: "F77F00"},
+    {name: "Honeycomb", hex: "FE9C01"},
+    {name: "Pompous Orange", hex: "FFAC40"},
+    {name: "Sardonic Green", hex: "8DA868"},
+    {name: "Erudite", hex: "378C40"},
+    {name: "Tiger Beetle", hex: "188E68"},
+    {name: "Swamp", hex: "204338"},
+    {name: "Humble Green", hex: "00201C"},
+    {name: "Cyan Spirit: Dark", hex: "003A42"},
+    {name: "Sincere Blue", hex: "2626C6"},
+    {name: "Hydrangea", hex: "044CE1"},
+    {name: "Linear: Dark", hex: "036595"},
+    {name: "Linear: Light", hex: "0385B5"},
+    {name: "Formidiblue", hex: "015EAA"},
+    {name: "Mail", hex: "EDEFEE"},
+    {name: "Robin Egg", hex: "9ACACA"},
+    {name: "Sand-ish Teal-ish", hex: "547C86"},
+    {name: "Cyan Spirit: Light", hex: "00FFDA"},
+    {name: "Righteous: Light", hex: "007696"},
+    {name: "Righteous: Dark", hex: "004056"},
+    {name: "Exec", hex: "18213A"},
+    {name: "Morado Misterioso", hex: "280D3F"},
+];
 
-function addBar(colorName, colorHex) {
-    let hex = "#" + colorHex;
-    let horiz = $("<h2></h2>").text(colorName);
-    horiz.addClass("colorBar");
-    horiz.css("background-color", hex);
-    let descrip = $("<p></p>").text(hex);
-    let descripAlt = $("<p></p>").text($(horiz).css("background-color"));
-    horiz.append(descrip);
-    horiz.append(descripAlt);
-    descrip.hide();
-    descripAlt.hide();
-    $("#col2").append(horiz);
-    if (colorHex[0] <= 3 && colorHex[2] <= 3 && colorHex[4] <= 3) {
-        horiz.css("color", "white");
-    }
-    horiz.click(function () {
-        descrip.toggle(150);
-        descripAlt.toggle(150);
+colors.forEach(function(c) {
+    const frame = $("<div></div>");
+    frame.addClass("frame");
+    const hexVal = '#' + c.hex;
+    frame.css("background-color", hexVal);
+    $("#col2").append(frame);
+    const infoFrame = $("<p></p>").html(`
+        ${c.name}
+        <br>
+        ${hexVal} | ${$(frame).css("background-color")}
+    `);
+    infoFrame.addClass("infoFrame");
+    frame.append(infoFrame);
+    infoFrame.hide();
+    frame.click(function() {
+        infoFrame.slideToggle(150);
     });
-}
+});
