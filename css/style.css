@@ -1,12 +1,16 @@
+:root {
+    --primary-bg-color: black;
+    --primary-font-color: white;
+}
 body {
     display: grid;
     grid-template-columns: 0.5fr 9fr 0.5fr;
     text-align: center;
-    background-color: black;
+    background-color: var(--primary-bg-color);
     font-family: 'Playfair Display', serif;
 }
 h1, h3 {
-    color: white;
+    color: var(--primary-font-color);
 }
 h1 {
     font-size: 400%;
@@ -40,7 +44,7 @@ h3 {
     margin: 0;
     text-align: left;
     font-size: 30px;
-    color: white;
-    background-color: black;
+    color: var(--primary-font-color);
+    background-color: var(--primary-bg-color);
     /* transition: 150ms cubic-bezier(.89,.03,.37,.95); */
 }

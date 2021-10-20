@@ -47,8 +47,4 @@ colors.forEach(function(c) {
         // infoFrame.animate({width: "45%"}, 150);
         infoFrame.slideToggle(150);
     });
-    // frame.dblclick(function() {
-    //     infoFrame.animate({width: "0"}, 1500);
-    //     infoFrame.hide();
-    // });
 });
