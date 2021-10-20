@@ -8,7 +8,7 @@ const colors = [
     {name: "Honeycomb", hex: "FE9C01"},
     {name: "Pompous Orange", hex: "FFAC40"},
     {name: "Sardonic Green", hex: "8DA868"},
-    {name: "Erudite", hex: "378C40"},
+    {name: "Evidently Emerald", hex: "378C40"},
     {name: "Tiger Beetle", hex: "188E68"},
     {name: "Swamp", hex: "204338"},
     {name: "Humble Green", hex: "00201C"},
@@ -17,7 +17,7 @@ const colors = [
     {name: "Hydrangea", hex: "044CE1"},
     {name: "Linear: Dark", hex: "036595"},
     {name: "Linear: Light", hex: "0385B5"},
-    {name: "Formidiblue", hex: "015EAA"},
+    {name: "Formidiblue", hex: "0482CD"},
     {name: "Mail", hex: "EDEFEE"},
     {name: "Robin Egg", hex: "9ACACA"},
     {name: "Sand-ish Teal-ish", hex: "547C86"},
@@ -29,20 +29,26 @@ const colors = [
 ];
 
 colors.forEach(function(c) {
-    const frame = $("<div></div>");
-    frame.addClass("frame");
+    const frame = $("<div class='frame'></div>");
     const hexVal = '#' + c.hex;
     frame.css("background-color", hexVal);
     $("#col2").append(frame);
-    const infoFrame = $("<p></p>").html(`
+    const infoFrame = $("<p class='infoFrame'></p>").html(`
         ${c.name}
         <br>
-        ${hexVal} | ${$(frame).css("background-color")}
+        ${hexVal}
+        <br>
+        ${$(frame).css("background-color")}
     `);
-    infoFrame.addClass("infoFrame");
     frame.append(infoFrame);
     infoFrame.hide();
     frame.click(function() {
+        // infoFrame.show();
+        // infoFrame.animate({width: "45%"}, 150);
         infoFrame.slideToggle(150);
     });
+    // frame.dblclick(function() {
+    //     infoFrame.animate({width: "0"}, 1500);
+    //     infoFrame.hide();
+    // });
 });
