@@ -16,7 +16,7 @@ const colors = [
     {name: "Cyan Spirit: Dark", hex: "003A42"},
     {name: "Sincere Blue", hex: "2626C6"},
     {name: "Hydrangea", hex: "044CE1"},
-    {name: "Formidiblue", hex: "015EAA"},
+    {name: "Formidiblue", hex: "0378F1"},
     {name: "Linear", hex: "0385B5"},
     {name: "Mail", hex: "EDEFEE"},
     {name: "Robin Egg", hex: "9ACACA"},
@@ -24,6 +24,7 @@ const colors = [
     {name: "Cyan Spirit: Light", hex: "00FFDA"},
     {name: "Righteous: Light", hex: "007696"},
     {name: "Righteous: Dark", hex: "004056"},
+    {name: "Could Be Slate", hex: "1C292C"},
     {name: "Exec", hex: "18213A"},
     {name: "Morado Misterioso", hex: "280D3F"},
 ];
