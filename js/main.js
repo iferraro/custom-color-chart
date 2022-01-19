@@ -13,6 +13,7 @@ const colors = [
     {name: "Tiger Beetle", hex: "188E68"},
     {name: "Swamp", hex: "204338"},
     {name: "Humble Green", hex: "00201C"},
+    {name: "Could Be Slate", hex: "1C292C"},
     {name: "Cyan Spirit: Dark", hex: "003A42"},
     {name: "Sincere Blue", hex: "2626C6"},
     {name: "Hydrangea", hex: "044CE1"},
@@ -24,7 +25,6 @@ const colors = [
     {name: "Cyan Spirit: Light", hex: "00FFDA"},
     {name: "Righteous: Light", hex: "007696"},
     {name: "Righteous: Dark", hex: "004056"},
-    {name: "Could Be Slate", hex: "1C292C"},
     {name: "Exec", hex: "18213A"},
     {name: "Morado Misterioso", hex: "280D3F"},
 ];
